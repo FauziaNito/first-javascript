@@ -68,3 +68,60 @@ function add(){
 }
 
 console.log(add());
+
+//Ozzy Friday's Recap
+
+var country = {//This is a static class with an object Uganda.
+    name: "Uganda",
+    population: 1200000,
+    size:15000,
+    climate:"Tropical"
+}
+//The above class only caters for just one country but how abut if we want to create more than one country
+
+function Country(name,population,size,climate){
+    this.countryName = name;
+    this.cPopulation = population;
+    this.cSize = size;
+    this.cClimate = climate;
+    this.cContinet = this.continet;
+    this.cPresident = this.president
+}
+//a dot is either calling a method or a class
+
+let uganda = new Country("Uganda", 4000000, 120000,"Tropical");
+let kenya = new Country("Kenya",5400000,340000,"Tropical","Africa","William Luto");
+
+console.log(kenya);
+
+//new turns to a functiona call into an instance or object of a class
+//what you call an instance refers to the values of the class
+//What we've done on line 90 and 91 is called instantiation.
+//the keyword new is called a constructor--A constructor is used to initialize an instantiated object
+
+function sum(){
+    let a = 10;
+}
+//Another way (new way) of definig functions
+//fat arrow (=>)
+let sum = () =>{
+
+}
+//The above function can be turned into an oject
+
+let baby = (name,weight,gender,yob) =>{
+    this.babyName = name;
+    this.babyWeight = weight;
+    this.babyGender = gender;
+    this.babyYob = yob;
+    this.father = father;
+
+}
+let father = baby.this.father = "Osman";
+
+let thirdBorn = new baby("Tanasha",4,"girl",2022);
+console.log(thirdBorn);
+
+// Assignment.
+//Define seven parameterized classes with at least 5 parameters using <this> keyword and
+//with at least 3 instances using the <new> keyword.:Due Tue 4pm on github

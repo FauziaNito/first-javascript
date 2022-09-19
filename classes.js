@@ -8,7 +8,7 @@
 
 //Note keep the parameters and the property names(this.something)
 function Cat(name, gender, color, DoB, food){//Note a class is like a katiba(mold)
-    this.planet = name; //this.name1 is the property of the class and name is the value
+    this.name1 = name; //this.name1 is the property of the class and name is the value
     this.gender1 = gender;//proterties are nouns(name)
     this.color1 = color;
     this.DoB1 = DoB;
