@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <p>I will Change</p>
+</body>
+<script>
+    let changeText = () =>{
+        const p = document.querySelector('p');
+        p.textContent = 'I changed because of an event listener';
+        
+    }
+    // Listening to the click event
+    const button = document.querySelector('button');
+    // Please explain this
+    button.addEventListener('click', changeText);
+</script>
+</html>

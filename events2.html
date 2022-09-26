@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This button is affected with an event handler in Js but without 
+        specifying the onclick event in the button-->
+    <button>Click Me</button>
+    <p>I will change</p>
+</body>
+<script>
+    // This is another way of putting an event handler on a button and also using 
+    // --using the onclick in js instead of html
+    let para = document.querySelector('p');
+    let button = document.querySelector('button');
+
+    const changeText = () =>{
+        para.textContent = "Hello There,I have just Changed";
+    }
+    function alertText(){
+        alert('Hay You');
+    }
+    button.onclick = changeText;//Note: () are missing from a changeText function call
+    button.onclick = alertText;
+</script>
+</html>

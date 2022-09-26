@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- Onclick attb/event in html, is where you call your js method -->
+    <button onclick="changeText()">Click Me</button>
+    <p>Try to Change Me</p>
+    <p>Try to Change Me</p>
+
+</body>
+<script>
+    const changeText = () =>{
+        //NOTE: Use single quotation when using JS cause html uses double quotes
+        // Incase you have more than one para in html document, write a loop to effect all 
+        // --of them or use id or class to identify each of them.
+        const p = document.querySelector('p'); 
+        p.textContent = 'I changed because of an inline handler';
+        p.style.border = '2px solid green';
+    }
+</script>
+</html>
