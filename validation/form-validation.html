@@ -9,11 +9,21 @@
 </head>
 <body>
     <div class="container">
-        <form id="signup" class="form">
+        <form id="signup" class="form" action="#" name="registration">
             <h1>Sign Up</h1>
             <div class="form-field">
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="phonenumber">Phone Number:</label>
+                <input type="text" name="phonenumber" id="phonenumber" autocomplete="off">
                 <small></small>
             </div>
             <div class="form-field">
@@ -33,7 +43,7 @@
                 <small></small>
             </div>
             <div class="form-field">
-                <input type="submit" value="Sign Up" onclick="checkUserName()">
+                <input type="submit" value="Sign Up" onclick="checkUserName() ; checkFirstName() ;checkPasswd(); ">
             </div>
         </form>
     </div>

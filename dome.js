@@ -24,7 +24,7 @@ for(let element of ul.children){
     element.style.background = "gold";//This color over rides the bg pink color of the 1 child
 }
 
-document.body.children[3].lastElementChild.style.background = "fuchsia"
+document.body.children[3].lastElementChild.style.background = "green";
 
 const tiger = ul.children[1];
 
@@ -42,6 +42,16 @@ const anotherShark = document.createElement("li");
 newShark.textContent = "Angel sharks";
 anotherShark.textContent = "BullHead sharks";
 
-ul.appendChild(newShark);
-ul.appendChild(anotherShark);
+ul.appendChild(newShark).style.background = "green";
+ul.appendChild(anotherShark).style.background = "green";;
+
+
+//Trying to add list items as a loop
+let Shark = ["Blacktip Shark", "Oceanic Whitetip Shark"];
+
+for(i=0; i <= 2; i++){
+    moreShark = document.createElement('li');
+    moreShark.innerText = Shark;
+    ul.appendChild(moreShark);
+}
 
