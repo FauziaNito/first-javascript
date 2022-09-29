@@ -20,10 +20,9 @@ const checkUserName = () => {
     // Alphanumeric == /^[0-9a-zA-Z]+$/
     // Alphabets == /^[A-Za-z]+$/
     // Numbers == /^[0-9]+$/
-    // == /^[0-9]+$/
     // Emails == /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-    // Regular expression or regx [/^[0-9a-zA-Z]+$/]. Used to manipulate strings. Don't put regx in quotes 
+    // Regular expression or regex [/^[0-9a-zA-Z]+$/]. Used to manipulate strings. Don't put regex in quotes 
     let alpha = /^[0-9a-zA-Z]+$/;
     console.log(typeof (alpha));
 
@@ -95,4 +94,15 @@ const checkPasswd = () => {
 
 
 
+
+// check whether value is a number or does not match string
+if(phoneNumber.value.match(numberRegex)){
+    email.focus();
+    return true;
+
+} else {
+    phoneNumber.style.border = '2px solid red';
+    phoneNumber.focus();
+}
+// /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/
 

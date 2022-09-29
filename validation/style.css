@@ -115,6 +115,11 @@ body {
     outline: none;
 }
 
+/* This puts the radio button on the same line */
+.radio{
+    display: flex;
+}
+
 
 
 

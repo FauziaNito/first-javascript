@@ -47,7 +47,7 @@ ul.appendChild(anotherShark).style.background = "green";;
 
 
 //Trying to add list items as a loop
-let Shark = ["Blacktip Shark", "Oceanic Whitetip Shark"];
+let Shark = [["Blacktip Shark"],["Oceanic Whitetip Shark"]];
 
 for(i=0; i <= 2; i++){
     moreShark = document.createElement('li');
