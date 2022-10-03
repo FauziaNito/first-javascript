@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="form-style.css">
+    <title>Patient Registration Form</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form id="signup" class="form" action="#" name="registration">
+                <h1>Patient Registration Form</h1>
+ 
+            <div class="row">
+                <!-- Row 1 column 1 -->
+                <div class="col">
+                    <div class="form-field">
+                        <label for="surname">Surname:<small> *</small></label>
+                        <input type="text" name="surname" id="surname" autocomplete="off">
+                        
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="country" >Country:</label>
+                        <select name="country" id="">
+                            <option value="ug">Uganda</option>
+                            <option value="ke">Kenya</option>
+                            <option value="tz">Tanzania</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="ninnumber">NIN Number:<small> *</small></label>
+                        <input type="text" name="ninnumber" id="ninnumber" autocomplete="off">
+                        
+                    </div>
+                    <!-- gender radio button -->
+                    <div class="form-field">
+                        <label for="gender">Gender:</label>
+                        <div class="radio">
+                            <input type="radio" name="gender" id="gender1" autocomplete="off" checked>
+                            <span>Female</span>
+                            <input type="radio" name="gender" id="gender2" autocomplete="off"> <span>Male</span>
+                            <input type="radio" name="gender" id="gender3" autocomplete="off"> <span>Others</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 1 column 2 -->
+                <div class="col">
+                    <div class="form-field">
+                        <label for="firstname">First Name:<small> *</small></label>
+                        <input type="text" name="firstname" id="firstname" autocomplete="off">
+                        
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="address" >Permanent Address:</label>
+                        <select name="paddress" id="">
+                            <option value="ug">Masaka</option>
+                            <option value="ke">Kampala</option>
+                            <option value="tz">Mbarara</option>
+                        </select>
+                    </div>
+                   
+                    <div class="form-field">
+                        <label for="phonenumber1">Phone Number:<small>*</small></label>
+                        <input type="text" name="phonenumber1" id="phonenumber1" autocomplete="off">
+                        
+                    </div>
+                    <div class="form-field mt-4">
+                        <label for="phonenumber">You Must fill in all felids with  <small>*</small></label>
+                    
+                    </div>
+                </div>
+                <!-- Row 1 column 3 -->
+                <div class="col">
+                    <div class="form-field">
+                        <label for="dob">Date of Birth:<small> *</small></label>
+                        <input type="date" name="dob" id="dob" autocomplete="off">
+                        <small></small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="raddress" >Residential Address:</label>
+                        <select name="raddress" id="">
+                            <option value="ug">Kireka</option>
+                            <option value="ke">Nddeba</option>
+                            <option value="tz">Busega</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="regcenter" >Center of Registration:</label>
+                        <select name="regcenter" id="">
+                            <option value="ug">Mulago Hospital</option>
+                            <option value="ke">Masaka Hospital</option>
+                            <option value="tz">Mbarara Referral</option>
+                        </select>
+                    </div>
+                </div>
+                <hr style="margin-top:20px;color: #0e7d73;">
+                <!--Row 2 column 1 -->
+                <h6>Next of Kin Details</h6>
+                <div class="col">
+                    <div class="form-field">
+                        <label for="name">Name:<small> *</small></label>
+                        <input type="text" name="name" id="name" autocomplete="off">
+                        <small></small>
+                    </div>
+                </div>
+                <!-- Row 2 column 2 -->
+                <div class="col">
+                    <div class="form-field">
+                        <label for="relation" >Relationship:</label>
+                        <select name="relation" id="">
+                            <option value="rel">Relative</option>
+                            <option value="nei">Neighbor</option>
+                            <option value="frnd">Friend</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <!-- Row 2 column 3-->
+                <div class="col">
+                    <div class="form-field">
+                        <label for="phonenumber2">Phone Number:<small> *</small></label>
+                        <input type="text" name="phonenumber2" id="phonenumber2" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <input class="btn" type="submit" value="Register">
+                </div>
+                <small>&copy; Copyright fauzia & Junior</small>
+            </div>
+        </form>
+</body>
+<!-- JavaScript Bundle with Popper -->
+    <script src="signup.js"></script>
+</html>

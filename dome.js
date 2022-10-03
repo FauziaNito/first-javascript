@@ -47,11 +47,14 @@ ul.appendChild(anotherShark).style.background = "green";;
 
 
 //Trying to add list items as a loop
-let Shark = [["Blacktip Shark"],["Oceanic Whitetip Shark"]];
+let Shark = ["Blacktip Shark","Oceanic Whitetip Shark"];
+let numberOfNewShark= Shark.length, i;
 
-for(i=0; i <= 2; i++){
-    moreShark = document.createElement('li');
-    moreShark.innerText = Shark;
+for(i=0; i < numberOfNewShark; ++i){
+ const moreShark = document.createElement('li');
+    moreShark.innerText = Shark[i];
     ul.appendChild(moreShark);
 }
+
+
 

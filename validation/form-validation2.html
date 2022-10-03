@@ -11,12 +11,15 @@
 
 <body>
     <div class="container">
-        <form id="signup" class="form" action="#" name="registration" onsubmit="">
+        <!-- Action ==specifies the server page(nodejs) that will receive data from this form-->
+        <!-- method == specifies if the data being taken is not/is exposed
+        use POST to keep data private, By default  -->
+        <form id="signup" class="form" action="#" name="registration" onsubmit="" method="post">
             <h1>Sign Up</h1>
             <div class="form-field">
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username" autocomplete="off">
-                <small></small>
+                <small>*</small>
             </div>
             
             <div class="form-field">
@@ -44,7 +47,7 @@
             <div class="radio">
                 <!-- Radio button takes one name-[Either one is checked or the other] -->
                 <input type="radio" name="gender" id="gender1" autocomplete="off" checked> <span>Female</span>
-                <input type="radio" name="gender" id="gender2" autocomplete="off"> <span>Male</span>
+                <input type="radio" name="gender*" id="gender2" autocomplete="off"> <span>Male</span>
             </div>
         </div>
 
@@ -57,7 +60,10 @@
         </div>
     </div>
             <div class="form-field">
-                <input class="btn" type="submit" value="Sign Up">
+                <input class="btn" type="submit" value="Sign Up" class="btn">
+            </div>
+            <div class="form-field">
+                <input class="btn" type="reset" value="Clear">
             </div>
         </form>
     </div>

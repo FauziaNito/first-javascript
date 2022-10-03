@@ -20,7 +20,7 @@ const checkPhone = () =>{
 
     // let alphaNumber = /^[0-9a-zA-Z]+$/ ;
     let alphabet = /^[A-Za-z]+$/;
-    let telNumber = /^\+\d{12}$/; 
+    let telNumber = /^\d{10}$/; 
 
     // check if empty
     if(phoneNumber.value === ''){
@@ -32,7 +32,7 @@ const checkPhone = () =>{
 
     // check whether value is a number within 12 digits that is specified in the regex
     if(phoneNumber.value.match(telNumber)){
-        phoneNumber.style.border = "2px solid green";
+        phoneNumber.style.border = "2px dotted green";
         email.focus();
         return true;
 
@@ -42,15 +42,15 @@ const checkPhone = () =>{
         return false;
     }
 
-    // // check whether value is a number or does not match string
-    // if(phoneNumber.value.match(numberRegex)){
-    //     email.focus();
-    //     return true;
+//     // check whether value is a number or does not match string
+//     if(phoneNumber.value.match(numberRegex)){
+//         email.focus();
+//         return true;
 
-    // } else {
-    //     phoneNumber.style.border = '2px solid red';
-    //     phoneNumber.focus();
-    // }
+//     } else {
+//         phoneNumber.style.border = '2px solid red';
+//         phoneNumber.focus();
+//     }
 
 //   let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
 //     // check if empty
