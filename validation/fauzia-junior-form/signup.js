@@ -11,7 +11,7 @@ const phoneNumber2 = document.registration.phonenumber2;
 const dateOfBirth = document.registration.dob;
 const residentAddress = document.registration.raddress;
 const regCenter = document.registration.regcenter;
-const name = document.registration.name;
+const kinName = document.registration.kinname;
 const relationship = document.registration.relation;
 
 
@@ -21,18 +21,18 @@ const checkPhone = () =>{
 
     // check if empty
     if(phoneNumber1.value == ''){
-        phoneNumber1.style.border = '3px solid red';
+        phoneNumber1.style.border = '2px solid red';
         phonenumber1.focus();
 
         return false;
     }
     // check if Phone Number is 10 digits
     if(phoneNumber1.value.match(mobileDigits)){
-        phoneNumber1.style.border = '3px solid green';
-        regcenter.focus();
+        phoneNumber1.style.border = '2px solid green';
+        regCenter.focus();
         return true;
     } else{
-        phoneNumber1.style.border = '3px solid red';
+        phoneNumber1.style.border = '2px solid red';
         phonenumber1.focus();
 
         return false;
@@ -44,18 +44,18 @@ const checkPhone2 = () =>{
     let mobileDigits = /^\d{10}$/;
      // check if empty
      if(phoneNumber2.value == ''){
-        phoneNumber2.style.border = '3px solid red';
+        phoneNumber2.style.border = '2px solid red';
         phonenumber2.focus();
 
         return false;
     }
     // check if Phone Number is 10 digits
     if(phoneNumber2.value.match(mobileDigits)){
-        phoneNumber2.style.border = '3px solid green';
+        phoneNumber2.style.border = '2px solid green';
         regcenter.focus();
         return true;
     } else{
-        phoneNumber2.style.border = '3px solid red';
+        phoneNumber2.style.border = '2px solid red';
         phonenumber2.focus();
 
         return false;
@@ -70,19 +70,19 @@ const checkDate = () =>{
     let invalidDate = 'mm/dd/yyyy';
 
     if(dateOfBirth.value == invalidDate){
-        dateOfBirth.style.border = '3px solid red';
+        dateOfBirth.style.border = '2px solid red';
         dateOfBirth.focus();
 
         return false;
     }
     
     if(dateOfBirth.value.match(dateRegex)){
-        dateOfBirth.style.border = '3px solid green';
+        dateOfBirth.style.border = '2px solid green';
         country.focus();
 
         return true;
     }else{
-        dateOfBirth.style.border = '3px solid red';
+        dateOfBirth.style.border = '2px solid red';
         dateOfBirth.focus();
 
         return false;
@@ -92,30 +92,30 @@ const checkDate = () =>{
 const checkSurname = () =>{
 let alpha = /^[A-Za-z]+$/;
 const min = 3;
-const max = 10;
+const max = 15;
 
 let mySurname = surname.value.trim();
 
 if(mySurname == ''){
-surName.style.border ='3px solid red';
+surName.style.border ='2px solid red';
 surName.focus();
 
 return false;
 }
 
 if(mySurname.length < min || mySurname.length > max){
-    surName.style.border = '3px solid red';
+    surName.style.border = '2px solid red';
     surName.focus();
     return false;
 
 } 
 
 if(mySurname.match(alpha)){
-    surName.style.border = '3px solid green';
+    surName.style.border = '2px solid green';
     firstName.focus();
     return true;
 } else{
-    surName.style.border = '3px solid red';
+    surName.style.border = '2px solid red';
     surName.focus();
     return false;
 }
@@ -125,30 +125,30 @@ if(mySurname.match(alpha)){
 const checkFirstName = () =>{
     let alpha = /^[A-Za-z]+$/;
     const min = 3;
-    const max = 10;
+    const max = 15;
     
     let first_name = firstName.value.trim();
     
     if(first_name == ''){
-    firstName.style.border ='3px solid red';
+    firstName.style.border ='2px solid red';
     firstName.focus();
     
     return false;
     }
     
     if(first_name.length < min || first_name.length > max){
-        firstName.style.border = '3px solid red';
+        firstName.style.border = '2px solid red';
         firstName.focus();
         return false;
     
     } 
     
     if(first_name.match(alpha)){
-        firstName.style.border = '3px solid green';
+        firstName.style.border = '2px solid green';
         dateOfBirth.focus();
         return true;
     } else{
-        firstName.style.border = '3px solid red';
+        firstName.style.border = '2px solid red';
         firstName.focus();
         return false;
     }
@@ -160,31 +160,31 @@ const checkFirstName = () =>{
 const checkName = () =>{
     let alpha = /^[A-Za-z]+$/;
     const min = 3;
-    const max = 10;
+    const max = 25;
     
-    let trimmed_name = name.value.trim();
+    let trimmed_name = kinName.value.trim();
     
     if(trimmed_name == ''){
-    name.style.border ='3px solid red';
-    name.focus();
+    kinName.style.border ='2px solid red';
+    kinName.focus();
     
     return false;
     }
     
     if(trimmed_name.length < min || trimmed_name.length > max){
-        name.style.border = '3px solid red';
-        name.focus();
+        kinName.style.border = '2px solid red';
+        kinName.focus();
         return false;
     
     } 
     
     if(trimmed_name.match(alpha)){
-        name.style.border = '3px solid green';
+        kinName.style.border = '2px solid green';
         relationship.focus();
         return true;
     } else{
-        name.style.border = '3px solid red';
-        name.focus();
+        kinName.style.border = '2px solid red';
+        kinName.focus();
         return false;
     }
     
@@ -198,26 +198,26 @@ const checkName = () =>{
 
         let trimmed_nin = ninNumber.value.trim();
         if(trimmed_nin == ''){
-            ninNumber.style.border = '3px solid red';
+            ninNumber.style.border = '2px solid red';
             ninNumber.focus();
 
         return false;
         }
 
         if(trimmed_nin.length < max || trimmed_nin.length > max){
-            ninNumber.style.border = '3px solid red';
+            ninNumber.style.border = '2px solid red';
             ninNumber.focus();
 
             return false;
         }
 
         if(trimmed_nin.match(ninregex)){
-            ninNumber.style.border = '3px solid green';
+            ninNumber.style.border = '2px solid green';
             phoneNumber1.focus();
 
             return true;
         }else{
-            ninNumber.style.border = '3px solid red';
+            ninNumber.style.border = '2px solid red';
             ninNumber.focus();
 
             return false;
@@ -231,5 +231,5 @@ phoneNumber2.addEventListener('focusout',checkPhone2);
 dateOfBirth.addEventListener('focusout',checkDate);
 surName.addEventListener('focusout',checkSurname);
 firstName.addEventListener('focusout',checkFirstName);
-name.addEventListener('focus',checkName);
+kinName.addEventListener('focusout',checkName);
 ninNumber.addEventListener('focusout',checkNin);
